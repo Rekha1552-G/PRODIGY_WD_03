@@ -1,0 +1,109 @@
+
+/* PAGE */
+
+body{
+margin:0;
+font-family:Arial;
+background:#111827;
+color:white;
+}
+
+/* MAIN SECTION (100% WIDTH) */
+
+.game-section{
+width:100%;
+min-height:100vh;
+display:flex;
+flex-direction:column;
+align-items:center;
+justify-content:center;
+}
+
+/* TITLE */
+
+h1{
+margin-bottom:10px;
+}
+
+/* MODE BUTTONS */
+
+.mode-buttons{
+margin:15px 0;
+}
+
+.mode-buttons button{
+padding:10px 20px;
+margin:5px;
+border:none;
+border-radius:6px;
+cursor:pointer;
+background:#3b82f6;
+color:white;
+font-size:15px;
+}
+
+.mode-buttons button:hover{
+background:#2563eb;
+}
+
+/* STATUS / WINNER SECTION */
+
+#status{
+font-size:20px;
+margin:10px 0;
+min-height:25px;
+}
+
+/* BOARD */
+
+.board-container{
+position:relative;
+}
+
+.board{
+display:grid;
+grid-template-columns:repeat(3,120px);
+gap:6px;
+}
+
+.cell{
+width:120px;
+height:120px;
+background:#374151;
+display:flex;
+justify-content:center;
+align-items:center;
+font-size:45px;
+cursor:pointer;
+border-radius:6px;
+}
+
+.cell:hover{
+background:#4b5563;
+}
+
+/* WINNING LINE */
+
+.win-line{
+position:absolute;
+height:6px;
+background:#10b981;
+width:0;
+transition:0.5s;
+}
+
+/* RESET BUTTON */
+
+.reset-btn{
+margin-top:15px;
+padding:10px 20px;
+border:none;
+border-radius:6px;
+background:#ef4444;
+color:white;
+cursor:pointer;
+}
+
+.reset-btn:hover{
+background:#dc2626;
+}
